@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>표현식 출력하기</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <!-- 리액트를 사용하는 코드 입력 -->
+    <script type="text/babel">
+        // 상수 선언하기
+        const name = '구름'
+        const imgUrl = 'https://happychocopet.com/wp-content/uploads/2023/04/%EB%A7%90%ED%8B%B0%ED%91%B8-%EC%88%98%EB%AA%85-1024x730.jpeg'
+        
+        // 컴포넌트와 컨테이너 생성하기
+        const component = <div>
+            <h1>{name} 님 안녕하세요!</h1>
+            <img src={imgUrl} />
+        </div>
+        const container = document.getElementById('root')
+
+        // 출력하기
+        ReactDOM.render(component, container)
+    </script>
+</body>
+</html>

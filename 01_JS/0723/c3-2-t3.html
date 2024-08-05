@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const rawInput = prompt('태어난 해를 입력해주세요.', '')
+        const year = Number(rawInput)
+
+        let 간
+        switch ((year - 4) % 10) {
+            case 0:
+                간 = '갑'
+                break
+            case 1:
+                간 = '을'
+                break
+            case 2:
+                간 = '병'
+                break
+            case 3:
+                간 = '정'
+                break
+            case 4:
+                간 = '무'
+                break
+            case 5:
+                간 = '기'
+                break
+            case 6:
+                간 = '경'
+                break
+            case 7:
+                간 = '신'
+                break
+            case 8:
+                간 = '임'
+                break
+            default:
+                간 = '계'
+                break
+                
+        }
+
+        let 띠
+        switch ((year - 4) % 12) {
+            case 0:
+                띠 = '자'
+                break
+            case 1:
+                띠 = '축'
+                break
+            case 2:
+                띠 = '인'
+                break
+            case 3:
+                띠 = '묘'
+                break
+            case 4:
+                띠 = '진'
+                break
+            case 5:
+                띠 = '사'
+                break
+            case 6:
+                띠 = '오'
+                break
+            case 7:
+                띠 = '미'
+                break
+            case 8:
+                띠 = '신'
+                break
+            case 9:
+                띠 = '유'
+                break
+            case 10:
+                띠 = '술'
+                break
+            default:
+                띠 = '해'
+                break
+        }
+        
+        alert(`${year}년은 ${간}${띠} 년입니다.`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

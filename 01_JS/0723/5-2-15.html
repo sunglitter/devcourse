@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 선언적 함수를 호출합니다.
+        선언적함수() // 함수 호이스팅으로 인해 아래의 선언적 함수 선언이 스코프 내에서 최상단으로 옮겨졌으므로 선언적함수가 정상적으로 동작함.
+
+        // 선언적 함수를 2번 생성합니다.
+        function 선언적함수 () {
+            console.log('1번째 선언적 함수입니다.')
+        }
+        function 선언적함수 () {
+            console.log('2번째 선언적 함수입니다.') // 2번째 선언적 함수 선언이 1번째 선언적 함수 선언을 덮어씀.
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+    <script>
+        const year = Number(prompt('연도를 입력해주세요', '연도'))
+        if (year % 4 !== 0) {
+            alert('평년입니다.')
+        } else if (year % 100 == 0 && year % 400 !== 0) {
+            alert('평년입니다.')
+        } else {
+            alert('윤년입니다.')
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

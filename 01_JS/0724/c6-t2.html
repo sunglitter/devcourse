@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printLang(code) {
+            return printLang._lang[code]
+        }
+        printLang._lang = {
+            ko: '한국어',
+            en: '영어',
+            ja: '일본어',
+            fr: '프랑스어',
+            es: '스페인어'
+        }
+        console.log('printLang("ko"):', printLang('ko'))
+        console.log('printLang("en"):', printLang('en'))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

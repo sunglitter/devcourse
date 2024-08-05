@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const zerocho = { 
+            name: {
+                first: '현영',
+                last: '조',
+            },
+            gender: 'm',
+        };
+        zerocho.name.last = '김'
+        console.log(zerocho)
+
+        const a = {
+            name: '강아지',
+        };
+        const b = a;
+        const c = b;
+        a.name = '고양이'
+        console.log(b.name);
+        console.log(c.name);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

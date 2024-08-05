@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const twoDimension = [
+            [1, 2, 3],
+            [4, 5, 6]
+            ];
+        for (let i = 0; i < twoDimension.length; i++) {
+            for (let j = 0; j <twoDimension[i].length; j++) {
+                console.log(twoDimension[i][j]);
+            }
+        }
+
+        const arr = [
+            ['a', null],
+            [1, undefined],
+            [NaN, true],
+            ['', 0]
+            ];
+        console.log(arr);
+
+        const array = []
+        for (let k = 0; k < 5; k++) {
+            const innerArray = [];
+            for (let l = 0; l < 4; l++) {
+                innerArray.push(1);
+            }
+            array.push(innerArray);
+        }
+        console.log(array);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

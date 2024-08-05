@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Position</title>
+
+    <style>
+        #container {
+            width: 500px; height: 300px;
+            border: 3px solid black;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .circle {
+            position: absolute;
+            width: 120px; height: 120px;
+            border-radius: 50% 50%;
+        }
+
+        #orange {
+            background: orange;
+            right: 20px; top: 20px;
+        }
+
+        #yellowgreen {
+            background: yellowgreen;
+            left: 20px; top: 20px;
+        }
+
+        #cyan {
+            background: cyan;
+            left: 190px; top: 20px;
+        }
+
+        #skyblue {
+            background: skyblue;
+            left: 20px; bottom: 20px;
+        }
+
+        #lemonchiffon {
+            background: lemonchiffon;
+            right: 20px; bottom: 20px;
+        }
+
+        #pink {
+            background: pink;
+            left: 190px; bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dummy Text</h1>
+    <div id="container">
+        <div id="orange" class="circle"></div>
+        <div id="yellowgreen" class="circle"></div>
+        <div id="cyan" class="circle"></div>
+        <div id="skyblue" class="circle"></div>
+        <div id="lemonchiffon" class="circle"></div>
+        <div id="pink" class="circle"></div>
+    </div>
+    <h1>Dummy Text</h1>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Basic</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        // 이벤트를 연결합니다.
+        $(document).ready(function () {
+            // 스타일을 적용합니다.
+            $('.box').css('float', 'left');
+            $('.box').css('margin', 10);
+            $('.box').css('width', 100);
+            $('.box').css('height', 100);
+
+
+            $('.box1').css('backgroundColor', 'skyblue');
+            $('.box2').css('backgroundColor', 'yellowgreen');
+            $('.box3').css('backgroundColor', 'hotpink');
+            $('.box4').css('backgroundColor', 'tomato');
+        });
+    </script>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+</body>
+</html>

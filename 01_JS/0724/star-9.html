@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 변수를 선언합니다.
+        let output = ''
+        // 반복합니다.
+        for (i = 5; i > 0; i--) {
+            for (j = 5; j > i; j--) {
+                output += ' '
+            }
+            for (k = 0; k < 2 * i - 1; k++) {
+                output += '*'
+            }
+            output += '\n'
+        }
+        console.log(output)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

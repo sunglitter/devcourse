@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const arr = ['가', '라', '다', '라', '마', '라'];
+        let index = arr.indexOf('라')
+        while (index > -1) {
+            arr.splice(index, 1);
+            index = arr.indexOf('라');
+        }
+        console.log(arr)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

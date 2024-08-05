@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>private 속성 사용하기(2)</title>
+    <script>
+        // 정사각형 클래스
+        class Square {
+            #length // 이 위치에 해당 속성을 private 속성으로 사용하겠다고 미리 선언
+
+            constructor (length) {
+                if (length <= 0) {
+                    throw '길이는 0보다 커야 합니다.' // throw 키워드를 사용해서 강제로 오류를 발생시킴
+                }
+                this.#length = length
+            }
+
+            // 정사각형의 둘레를 구하는 메소드
+            getPerimeter () { return 4 * this.#length }
+            // 정사각형의 넓이를 구하는 메소드
+            getArea () { return this.#length * this.#length }
+        }
+
+        // 클래스 사용하기
+        const square = new Square(10)
+        square.length = -10
+        console.log(`정사각형의 둘레: ${square.getPerimeter()}`)
+        console.log(`정사각형의 넓이: ${square.getArea()}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

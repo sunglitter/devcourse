@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const multiply = (x, y, z) => {
+            return x * y * z;
+        };
+        console.log(multiply(2, 4, 6));
+
+        const func = (msg) => () => {
+            console.log(msg);
+        };
+        const innerFunc1 = func('hello');
+        const innerFunc2 = func('javascript');
+        const innerFunc3 = func();
+        innerFunc1();
+        innerFunc2();
+        innerFunc3();
+
+        const hof = (a) => (b) => (c) => {
+            return a + (b * c);
+        }
+        const first = hof(3);
+        const second = first(4);
+        const third = second(5);
+        console.log(third);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
