@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <script src="signup.js" defer></script>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>회원가입</h2>
+    <form id="signupForm">
+        <div>
+            <label for="username">아이디:</label>
+            <input type="text" id="username" name="username">
+            <span id="usernameError" class="error"></span>
+        </div>
+        <div>
+            <label for="email">이메일:</label>
+            <input type="text" id="email" name="email">
+            <span id="emailError" class="error"></span>
+        </div>
+        <div>
+            <label for="password">비밀번호:</label>
+            <input type="password" id="password" name="password">
+            <span id="passwordError" class="error"></span>
+        </div>
+        <div>
+            <label for="confirmPassword">비밀번호 확인:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <span id="confirmPasswordError" class="error"></span>
+        </div>
+        <div>
+            <label>메일링 수신:</label>
+            <input type="radio" id="subscribeYes" name="subscribe" value="yes">
+            <label for="subscribeYes">예</label>
+            <input type="radio" id="subscribeNo" name="subscribe" value="no">
+            <label for="subscribeNo">아니오</label>
+        </div>
+        <div>
+            <button type="button" onclick="validateForm()">가입하기</button>
+        </div>
+        <div>
+            <span id="resultMessage" class="error"></span>
+        </div>
+    </form>
+</body>
+</html>
