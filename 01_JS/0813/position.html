@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      background-color: blue;
+      height: 800px;
+      width: 600px;
+    }
+    .container .box {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+      font-size: 30px;
+      text-align: center;
+      line-height: 100;
+      border: 1px solid black;
+      box-sizing: border-box;
+    }
+    /* 2, 3, 5, 1, 4 */
+    /* flex-grow - 나머지 공간을 나눠갖는데 해당 숫자만큼 비율이 늘어남 */
+    /* flex-shrink - 나머지 공간을 나눠갖는데 해당 숫자만큼 비율이 줄어듦 */
+
+    .container .box:nth-child(1) {
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    .container .box:nth-child(2) {
+      flex-grow: 0;
+      flex-shrink: 2;
+    }
+    .container .box:nth-child(3) {
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    .container .box:nth-child(4) {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .resizeBox {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin-top: 100px;
+      /*  transition: 1s 0.5s; */ /* 속성명, 지속시간, 대기시간 */
+      transform: perspective(500px) /* 원근법 관련 함수(제일 앞에 작성해야함) */
+        rotateX(45deg) rotate(45deg);
+    }
+    .container2 {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+    }
+    .container2 .item {
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      font-size: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotateX(180deg);
+      backface-visibility: hidden;
+    }
+    .cardWrap {
+      width: 200px;
+      height: 150px;
+      perspective: 1000px;
+    }
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: 0.2s;
+      transform-style: preserve-3d;
+    }
+    .front,
+    .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      backface-visibility: hidden;
+    }
+    .front {
+      background: orange;
+    }
+    .back {
+      background: blue;
+      transform: rotateY(180deg);
+    }
+
+    .cardWrap:hover .card {
+      transform: rotateY(180deg);
+    }
+
+    /* .resizeBox:hover {
+      width: 300px;
+      background-color: blue;
+    } */
+
+    /* .container .box:nth-child(2) {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 200px;
+      height: 200px;
+      background-color: orangered;
+      z-index: 5;
+    } */
+
+    /* .container .box:nth-child(3) {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      z-index: 7;
+    } */
+  </style>
+  <body>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+    </div>
+    <div class="resizeBox"></div>
+    <div class="container2">
+      <div class="item">카드</div>
+    </div>
+    <!-- hover 했을 때 카드 뒷면이 보이도록 해주세요! -->
+    <div class="cardWrap">
+      <div class="card">
+        <div class="front">
+          <h1>앞</h1>
+        </div>
+        <div class="back">
+          <h1>뒤</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

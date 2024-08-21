@@ -1,0 +1,45 @@
+body {
+  background-color: #ccc;
+}
+body .container {
+  padding: 20px;
+}
+body .container .header {
+  background-color: #048c4d;
+  padding: 20px;
+  color: white;
+}
+body .container .nav {
+  display: flex;
+  background-color: #012626;
+  padding: 20px;
+}
+body .container .nav .nav-item {
+  color: white;
+  margin: 0 15px;
+}
+body .container .content {
+  background-color: white;
+  padding: 20px;
+}
+body .container .content .card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+body .container .content .card .card-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+body .container .content .card .card-description {
+  font-size: 14px;
+  color: #333;
+}
+body .container .footer {
+  background-color: #012626;
+  color: white;
+  padding: 10px;
+  text-align: center;
+} /*# sourceMappingURL=scssTest.css.map */

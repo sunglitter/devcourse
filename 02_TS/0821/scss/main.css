@@ -1,0 +1,22 @@
+.container h1 {
+  color: #ccc;
+}
+.container ul li .name {
+  color: green;
+}
+.container ul li .age {
+  color: violet;
+}
+.container .plus-small {
+  font-size: 20px;
+}
+.container .plus-large {
+  font-size: 50px;
+}
+.container .plus-m {
+  color: red;
+}
+.container .box {
+  font-weight: 700;
+  font-size: 50px;
+}/*# sourceMappingURL=main.css.map */
