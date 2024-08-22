@@ -109,13 +109,15 @@
 //   console.log(error.message);
 // }
 
-// 문제 1 -> name이 lib.dom.d.ts:27609:15 에서 이미 선언된 변수이기에 문제에 적합하지 않은 변수였다고 생각됨
+// // 문제 1 -> name이 lib.dom.d.ts:27609:15 에서 이미 선언된 변수이기에 문제에 적합하지 않은 변수였다고 생각됨
 // let name = "kim";
 
-function add(a: number, b: number): number {
-  return a + b;
-}
+// // 문제 2
+// function add(a: number, b: number): number {
+//   return a + b;
+// }
 
-function isEven(num: number): boolean {
-  return num % 2 === 0;
-}
+// // 문제 3
+// function isEven(num: number): boolean {
+//   return num % 2 === 0;
+// }
