@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "CommonJS",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "strictNullChecks": true,
+    "lib": ["es5", "dom"]
+  },
+  "include": ["ts", "dist/main.js"],
+  "exclude": ["node_modules"]
+}
