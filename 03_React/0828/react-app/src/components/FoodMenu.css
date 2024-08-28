@@ -1,0 +1,13 @@
+.foodList {
+  background-color: rgb(236, 211, 178);
+  border-radius: 10px;
+  width: 300px;
+  height: 500px;
+  display: inline-block;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.foodImg {
+  width: 200px;
+}
