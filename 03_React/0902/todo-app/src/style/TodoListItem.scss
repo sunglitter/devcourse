@@ -6,7 +6,7 @@
   background: #ffcdd2;
 
   // 짝수번째 행 배경색 변경
-  &:ntn-child(even) {
+  &:nth-child(even) {
     background: #ffedff;
   }
 }
@@ -16,10 +16,16 @@
   .checkbox {
     width: 1rem;
     height: 1rem;
+
+    &:checked + .text {
+      color: grey;
+      text-decoration: line-through;
+    }
   }
 
   .text {
     margin-left: 10px;
+    flex: 1 1 0;
   }
 }
 .remove {
