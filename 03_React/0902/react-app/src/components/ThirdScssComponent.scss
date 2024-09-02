@@ -1,0 +1,20 @@
+/* 전역 변수 */
+$primary-color: black;
+
+.container {
+  /* 지역 변수 */
+  $primary-color: red !default;
+  background-color: $primary-color; // red
+}
+
+.hello {
+  color: $primary-color; // black
+}
+
+// !global
+// 변수의 유효범위를 전역(global)로 설정
+
+// !default
+// 지역변수를 설정하겠지만, 만약에 지역변수와 이름이 같은 변수가 이미 있다면
+// 현재 설정하는 지역변수를 무시하겠음
+// 내 프로젝트 + 외부 라이브러리

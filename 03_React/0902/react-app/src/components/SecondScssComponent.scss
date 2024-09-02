@@ -1,0 +1,10 @@
+$width: 500px;
+$height: 500px;
+
+.container {
+  border: 1px solid black;
+  width: $width;
+  height: $height;
+  background: url("./images/logo192.png");
+  background-size: cover;
+}
