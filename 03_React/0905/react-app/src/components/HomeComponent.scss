@@ -1,3 +1,48 @@
+// * {
+//   margin: 0;
+// }
+
+// .container {
+//   width: 100%;
+//   height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// @mixin flexCenter() {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   font-size: 30px;
+// }
+
+// .header {
+//   @include flexCenter();
+//   width: 100%;
+//   height: 100px;
+//   border-bottom: 3px solid gray;
+// }
+
+// .main {
+//   @include flexCenter();
+//   flex: 1;
+// }
+
+// .footer {
+//   @include flexCenter();
+//   width: 100%;
+//   height: 100px;
+//   border-top: 3px solid gray;
+// }
+
+// .toggleBtn {
+//   background-color: transparent;
+//   border: none;
+//   font-size: 30px;
+// }
+
+// 복습
+
 * {
   margin: 0;
 }
@@ -9,6 +54,7 @@
   flex-direction: column;
 }
 
+// 사용자 정의 함수
 @mixin flexCenter() {
   display: flex;
   justify-content: center;
@@ -17,6 +63,7 @@
 }
 
 .header {
+  // flexCenter 함수 호출
   @include flexCenter();
   width: 100%;
   height: 100px;
